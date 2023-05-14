@@ -11,7 +11,7 @@ public class Mensaje {
     public Mensaje() {
     }
 
-    public Mensaje(String Mensaje) {
+    public Mensaje(String mensaje) {
         this.mensaje = mensaje;
     }
     
@@ -21,7 +21,7 @@ public class Mensaje {
         return mensaje;
     }
 
-    public void setMensaje(String Mensaje) {
+    public void setMensaje(String mensaje) {
         this.mensaje = mensaje;
     }
     

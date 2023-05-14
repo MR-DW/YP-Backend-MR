@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/proyectos")
-@CrossOrigin(origins= {"http://localhost:4200",}, allowedHeaders = "*")
+@CrossOrigin(origins = {"https://portfolio-matias-ruiz.web.app" }, allowedHeaders = "*")
 public class CProyectos {
     
     @Autowired
