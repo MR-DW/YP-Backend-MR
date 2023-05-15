@@ -40,5 +40,4 @@ com\portfolio\mr\Security\Controller\AuthController.class
 com\portfolio\mr\Security\jwt\JwtProvider.class
 com\portfolio\mr\Security\Dto\NuevoUsuario.class
 com\portfolio\mr\Service\ImpPersonaService.class
-com\portfolio\mr\Security\jwt\JwtEntryPoint.class
 com\portfolio\mr\Security\Entity\UsuarioPrincipal.class

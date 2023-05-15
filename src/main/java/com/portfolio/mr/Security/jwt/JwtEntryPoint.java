@@ -1,6 +1,6 @@
 
 package com.portfolio.mr.Security.jwt;
-
+/*
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -27,4 +27,4 @@ public class JwtEntryPoint implements AuthenticationEntryPoint{
         response.sendError(HttpServletResponse.SC_UNAUTHORIZED);
     }
     
-}
+}*/

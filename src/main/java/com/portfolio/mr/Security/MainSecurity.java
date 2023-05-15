@@ -2,7 +2,7 @@
 package com.portfolio.mr.Security;
 
 import com.portfolio.mr.Security.Service.UserDetailsImpl;
-import com.portfolio.mr.Security.jwt.JwtEntryPoint;
+//import com.portfolio.mr.Security.jwt.JwtEntryPoint;
 import com.portfolio.mr.Security.jwt.JwtTokenFilter;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +29,7 @@ public class MainSecurity{
     @Autowired
     UserDetailsImpl userDetailsServiceImpl;
     @Autowired
-    JwtEntryPoint jwtEntryPoint;
+   // JwtEntryPoint jwtEntryPoint;
     
     @Bean
     public JwtTokenFilter jwtTokenFilter(){
@@ -50,7 +50,7 @@ public class MainSecurity{
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         http.cors().and().csrf().disable()
-                .exceptionHandling().authenticationEntryPoint(jwtEntryPoint).and()
+               // .exceptionHandling().authenticationEntryPoint(jwtEntryPoint).and()
                 .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and()
                 .authorizeHttpRequests()
                 .requestMatchers("/**").permitAll()
