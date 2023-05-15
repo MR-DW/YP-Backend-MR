@@ -23,7 +23,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/educacion")
-@CrossOrigin(origins = {"https://portfolio-matias-ruiz.web.app", "https://portfolio-matias-ruiz.firebaseapp.com/" }, allowedHeaders = "*")
+@CrossOrigin(origins = {"https://porfolio-mr.web.app"}, allowedHeaders = "*")
 public class CEducacion {
     
     @Autowired
