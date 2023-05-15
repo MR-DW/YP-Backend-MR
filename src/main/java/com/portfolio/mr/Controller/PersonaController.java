@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("/personas")
-@CrossOrigin(origins = {"https://porfolio-mr.web.app"}, allowedHeaders = "*")
+@CrossOrigin(origins = {"https://porfolio-mr.web.app","https://porfolio-mr.web.app/portfolio"}, allowedHeaders = "*")
 public class PersonaController {
     
     @Autowired
