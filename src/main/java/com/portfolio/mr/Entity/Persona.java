@@ -29,10 +29,10 @@ public class Persona {
     @NotNull
     private String img;
     
-    @Size(min = 1, max = 50, message = "No cumple con la longitud")
+    //@Size(min = 1, max = 50, message = "No cumple con la longitud")
     private String profesion;
     
-    @Size(min = 1, max = 100, message = "No cumple con la longitud")
+  //  @Size(min = 1, max = 100, message = "No cumple con la longitud")
     private String edad;
     
     @NotNull

@@ -8,7 +8,7 @@ public class dtoPersona {
     private String nombre;
     @NotBlank
     private String apellido;
-    @NotBlank
+    //@NotBlank
     private String img;
 
     private String profesion;

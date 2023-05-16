@@ -83,7 +83,7 @@ public class PersonaController {
         if(!personaService.existsById(id)){
             return new ResponseEntity(
                      new Mensaje(
-                    "No ixiste el id"
+                    "No existe el id"
              )
                     , HttpStatus.NOT_FOUND);
            
@@ -116,21 +116,14 @@ public class PersonaController {
              )
                     , HttpStatus.BAD_REQUEST);
         }
-        if(StringUtils.isBlank(dtopersona.getImg())){
-            return new ResponseEntity(
-                     new Mensaje(
-                    "La Imagen es obligatoria"
-             )
-                    , HttpStatus.BAD_REQUEST);
-        }
         Persona persona = personaService.getOne(id).get();
         
         persona.setNombre(dtopersona.getNombre());
         persona.setApellido(dtopersona.getApellido());
         persona.setDescripcion(dtopersona.getDescripcion());
-        persona.setProfesion(dtopersona.getProfesion());
-        persona.setImg(dtopersona.getImg());
-        persona.setEdad(dtopersona.getEdad());
+     //   persona.setProfesion(dtopersona.getProfesion());
+      //  persona.setImg(dtopersona.getImg());
+       // persona.setEdad(dtopersona.getEdad());
         
         
         personaService.save(persona);
